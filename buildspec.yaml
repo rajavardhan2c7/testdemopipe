@@ -9,7 +9,7 @@ phases:
       - mvn package
       - sam package
         --template-file sam-template.yml
-        --s3-bucket testdevd
+        --s3-bucket codepipeline-ap-south-1-794748969034Info
         --output-template-file packaged-template.yml
 artifacts:
   files:
