@@ -1,0 +1,15 @@
+# SAM template for CodeBuild
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Lambda application.
+Resources:
+  function:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: target/demo-aws-lambda-ci-cd-1.0-SNAPSHOT.jar
+      Handler: demo.lambda.HandlerWeatherData
+      Runtime: java11
+      Description: Java function
+      MemorySize: 128
+      Timeout: 10
+      Tracing: Active
