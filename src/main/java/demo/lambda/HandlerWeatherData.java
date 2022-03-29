@@ -12,6 +12,7 @@ public class HandlerWeatherData implements RequestHandler<WeatherData, WeatherDa
         // process event
         logger.log("EVENT TYPE: " + event.getClass().toString() + '\n');
         logger.log("EVENT: " + event + '\n');
+        logger.log("testing");
         return event;
     }
 }
