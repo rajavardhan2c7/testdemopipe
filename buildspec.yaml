@@ -10,7 +10,6 @@ phases:
       - sam package
         --template-file sam-template.yml
         --s3-bucket codepipeline-ap-south-1-689042720889
-        #--s3-bucket javalam
         --output-template-file packaged-template.yml
 artifacts:
   files:
