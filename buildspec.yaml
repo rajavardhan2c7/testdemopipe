@@ -9,7 +9,7 @@ phases:
       - mvn package
       - sam package
         --template-file sam-template.yml
-        --s3-bucket javalam11
+        --s3-bucket cicdtestpoc
         --output-template-file packaged-template.yml
 artifacts:
   files:
