@@ -13,3 +13,5 @@ Resources:
       MemorySize: 128
       Timeout: 10
       Tracing: Active
+      DeployementPreference :
+         Type : Codedeploydefault.LambdaCanary10Percent5minutes
