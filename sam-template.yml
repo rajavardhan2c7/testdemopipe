@@ -6,7 +6,7 @@ Resources:
   function:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://javalam1/84842492923a0eb4f382a5df8ebb5244
+      CodeUri: target/demo-aws-lambda-ci-cd-1.0-SNAPSHOT.jar
       Handler: demo.lambda.HandlerWeatherData
       Runtime: java11
       Description: Java function
